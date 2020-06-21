@@ -11,6 +11,8 @@
     <modules>
         <module>m1_springboot_helloworld</module>
         <module>m2_springboot_my</module>
+        <module>m4_ssm</module>
+        <module>m3_springboot_devtools</module>
     </modules>
 
 
