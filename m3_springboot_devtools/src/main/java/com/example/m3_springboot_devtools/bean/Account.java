@@ -1,6 +1,15 @@
 package com.example.m3_springboot_devtools.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//表示 表与类的对应关系
+@Entity(name = "account_")
 public class Account {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String account;
     private Double money;

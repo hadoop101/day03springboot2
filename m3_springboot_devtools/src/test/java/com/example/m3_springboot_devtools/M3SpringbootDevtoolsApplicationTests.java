@@ -1,6 +1,7 @@
 package com.example.m3_springboot_devtools;
 
 import com.example.m3_springboot_devtools.bean.Account;
+import com.example.m3_springboot_devtools.dao.AccountDao;
 import com.example.m3_springboot_devtools.service.AccountService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,15 @@ class M3SpringbootDevtoolsApplicationTests {
         //AccountService acocuntService = new AccountServiceImpl();
         Account account = new Account(1001L,"jack",33D);
         accountService.saveAccount(account);
+
+    }
+    @Autowired
+    AccountDao accountDao = null;
+    @Test
+    void test02Dao() {
+        //AccountService acocuntService = new AccountServiceImpl();
+        Account account = new Account(1001L,"jack",33D);
+        accountDao.save(account);
 
     }
 
