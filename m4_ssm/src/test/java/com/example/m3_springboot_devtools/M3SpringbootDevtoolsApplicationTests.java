@@ -15,7 +15,7 @@ class M3SpringbootDevtoolsApplicationTests {
     @Test
     void test01Service() {
         //AccountService acocuntService = new AccountServiceImpl();
-        Account account = new Account(1001L,"jack",33D);
+        Account account = new Account(1003L,"tony",33D);
         accountService.saveAccount(account);
 
     }
@@ -24,7 +24,7 @@ class M3SpringbootDevtoolsApplicationTests {
     @Test
     void test02Dao() {
         //AccountService acocuntService = new AccountServiceImpl();
-        Account account = new Account(1001L,"jack",33D);
+        Account account = new Account(1002L,"rose",33D);
         accountDao.save(account);
 
     }
